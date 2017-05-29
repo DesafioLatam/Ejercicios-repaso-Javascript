@@ -6,23 +6,23 @@
 1. ¿Qué se muestra en pantalla?
 
 	~~~js
-	1  a = 2
-	2 a + 1
-	3 console.log(a)
+	a = 2
+	a + 1
+	console.log(a)
 	~~~
 - ¿Qué se muestra en pantalla?
 
 	~~~js
-	1  a = "2"
-	2 a += 1
-	3 console.log(a)
+	a = "2"
+	a += 1
+	console.log(a)
 	~~~
 - ¿Qué se muestra en pantalla?
 
 	~~~js
 	console.log( 2 + 3 * 5)
 	~~~
-	
+
 	- ¿Por qué es relevante esta pregunta?
 	- Cómo podríamos hacer para cambiar el orden de la operación
 - ¿Qué se muestra en pantalla?
@@ -31,9 +31,29 @@
 	function saludar(a){
 		console.log("hola");
 	}
-	
+
 	saludar
 	~~~
+	- ¿Qué hay que agregar para que el llamado a la función muestre en pantalla "hola"?
+	- Hay algo en este código que está sobrando, ¿qué es?
+- ¿Cuál es el error?
+
+	~~~js
+	var interpretarIMC = function(peso, estatura){
+		var imc = calcularIMC(peso, estatura);
+		if (imc > 24){
+			return "sobrepeso";
+		} else if (imc > 19) {
+			return "ok";
+		} else {
+			return "bajo peso";
+		}
+	}
+
+	resultado = InterpretarIMC(95);
+	console.log(resultado);
+	~~~
+
 - Qué hace?
 
 	~~~js
@@ -67,5 +87,3 @@
 - Crear una calculadora, para eso se debe generar un botón para cada número, un botón para suma, resta, multiplicación y división y otro para generar el resultado, para realizar el ejercicio se recomienda ir  guardando y concatenando cada texto en un input y al hacer click en resultado utilizar la instrucción eval.
 
 </section>
-
-
